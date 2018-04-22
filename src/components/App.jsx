@@ -1,12 +1,28 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
+import Header from './Header';
+import Home from './Home/Home';
+import About from './About/About';
 
 function App(){
   return (
-    <div>
-      <h1>React project works!</h1>
+    <div className="container">
+      <Header/>
       <Switch>
+				<Route exact path='/' component={Home} />
+				<Route exact path='/about' component={About} />
       </Switch>
+			<style global jsx>{`
+				body {
+					background-color: #C9C4F1;
+				}
+
+				div.container {
+					max-width: 1400px;
+					text-align: center;
+					margin: auto;
+				}
+			`}</style>
     </div>
   );
 }
