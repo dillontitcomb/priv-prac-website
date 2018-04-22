@@ -26,11 +26,11 @@ function App(){
 			<Footer/>
       <style global jsx>{`
 				body {
-					background-color: #C9C4F1;
+					background-color: #bccad6;
+					font-family: Helvetica;
 				}
 
 				div.container {
-					max-width: 1400px;
 					text-align: center;
 					margin: auto;
 				}
