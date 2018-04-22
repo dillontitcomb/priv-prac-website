@@ -26,6 +26,7 @@ function App(){
 			<Footer/>
       <style global jsx>{`
 				body {
+					margin: 0;
 					background-color: #bccad6;
 					font-family: Helvetica;
 				}
