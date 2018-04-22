@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 
 function Header(){
   return (
-      <div>
+    <div>
 				
 
-				<h1>Mackenzie & Friends Counseling Private Practice</h1>
-      </div>
+      <h1>Mackenzie & Friends Counseling Private Practice</h1>
+    </div>
   );
 }
 

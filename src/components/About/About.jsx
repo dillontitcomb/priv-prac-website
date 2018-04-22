@@ -1,19 +1,19 @@
-import React from "react";
+import React from 'react';
 
 function Home(){
   return (
+    <div>
       <div>
-				<div>
-					<h1>About Us</h1>
-					<button>Schedule an session</button>
-				</div>
-				<style jsx>{`
+        <h1>About Us</h1>
+        <button>Schedule an session</button>
+      </div>
+      <style jsx>{`
 					div.jumbotron {
 						background-color: #DEEDFF;
 					}
 							`}
-				</style>
-      </div>
+      </style>
+    </div>
   );
 }
 
