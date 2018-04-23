@@ -5,13 +5,14 @@ import { Link } from 'react-router-dom';
 function Header(){
   return (
     <div className="topnav">
-			<Link className="link active" to="/">Home</Link>
-			<Link className="link" to="/about">About</Link>
-			<Link className="link" to="/approach">Approach</Link>
-			<Link className="link" to="/services">Services</Link>
-			<Link className="link" to="/resources">Resources</Link>
-			<Link className="link" to="/admin">Admin</Link>
-			<style jsx>{`
+      <Link className="link active" to="/">Home</Link>
+      <Link className="link" to="/about">About</Link>
+			<Link className="link" to="/counselors">Our Counselors</Link>
+      <Link className="link" to="/approach">Approach</Link>
+      <Link className="link" to="/services">Services</Link>
+      <Link className="link" to="/resources">Resources</Link>
+      <Link className="link" to="/admin">Admin</Link>
+      <style jsx>{`
 					.topnav {
 						background-color: white;
 						overflow: hidden;

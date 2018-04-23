@@ -8,6 +8,7 @@ import About from './About/About';
 import Approach from './Approach/Approach';
 import Services from './Services/Services';
 import Resources from './Resources/Resources';
+import Counselors from './Counselors/Counselors';
 import Error404 from './Error404';
 
 function App(){
@@ -17,13 +18,14 @@ function App(){
       <Switch>
         <Route exact path='/' component={Home} />
         <Route exact path='/about' component={About} />
-				<Route exact path='/admin' component={Admin} />
-				<Route exact path='/approach' component={Approach} />
-				<Route exact path='/services' component={Services} />
-				<Route exact path='/resources' component={Resources} />
-				<Route component={Error404} />
+        <Route exact path='/admin' component={Admin} />
+        <Route exact path='/approach' component={Approach} />
+        <Route exact path='/services' component={Services} />
+        <Route exact path='/resources' component={Resources} />
+				<Route exact path='/counselors' component={Counselors} />
+        <Route component={Error404} />
       </Switch>
-			<Footer/>
+      <Footer/>
       <style global jsx>{`
 				body {
 					margin: 0;

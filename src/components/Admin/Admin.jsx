@@ -6,7 +6,7 @@ function Admin(){
       <div>
         <h1>Administrator Home</h1>
         <button>Manage Clients</button>
-				<button>Manage Appointments</button>
+        <button>Manage Appointments</button>
       </div>
       <style jsx>{`
 					div.jumbotron {

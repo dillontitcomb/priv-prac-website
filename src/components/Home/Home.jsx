@@ -2,15 +2,15 @@ import React from 'react';
 import office from '../../assets/images/office.jpg';
 
 function Home(){
-	const callToAction = 'Welcome to Mackenzie & Friends Counseling Group';
+  const callToAction = 'Welcome to Mackenzie & Friends Counseling Group';
   const welcomeText = 'Take a deep breath. You\'re in good hands.';
   return (
     <div>
-			<div className="topimage">
-				<div className="overlay">
-					<h1 className="calltoaction">{callToAction}</h1>
-				</div>
-			</div>
+      <div className="topimage">
+        <div className="overlay">
+          <h1 className="calltoaction">{callToAction}</h1>
+        </div>
+      </div>
       <div className="jumbotron">
         <h1>{welcomeText}</h1>
         <hr></hr>
