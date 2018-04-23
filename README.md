@@ -15,6 +15,18 @@ _This webpage aims to be the online presence of a counseling private practice. T
 	* _Functionality: CRUD Clients, CRUD Appointments (clients can only create/request), messaging between client and counselor_
 	* _Design Guidelines: Outdoorsy, personal, warm, holistic but professional, inclusive, depth-oriented_
 
+## Assignment Questions
+
+* _Difficulties during development process:_
+	* _It's a bit challenging to plan out a website before knowing exactly how the data will flow_
+
+* _Comparison of Angular and React:_
+	* _JSX in React feels like a superior way to represent the DOM_
+	* _The React-Router is extremely simple and easy to use_
+	* _Styling without bootstrap is a challenge_
+	* _Style JSX elements are really easy to use and make styling a large project much less problematic._
+
+
 ## Setup/Installation Requirements
 
 * _Clone this repository_
