@@ -7,15 +7,15 @@ function ClientList(props){
     <div>
       <div>
         <h1>Current Clients:</h1>
-				{Object.keys(props.clientList).map(function(clientId) {
-					let client = props.clientList[clientId];
-					return <Client name={client.name}
-						phone={client.phone}
-						email={client.email}
-						bio={client.bio}
-						key={clientId}
-						clientId={clientId} />
-				})}
+        {Object.keys(props.clientList).map(function(clientId) {
+          let client = props.clientList[clientId];
+          return <Client name={client.name}
+            phone={client.phone}
+            email={client.email}
+            bio={client.bio}
+            key={clientId}
+            clientId={clientId} />;
+        })}
       </div>
       <style jsx>{`
 							`}
@@ -25,7 +25,7 @@ function ClientList(props){
 }
 
 ClientList.propTypes = {
-	clientList: PropTypes.object
-}
+  clientList: PropTypes.object
+};
 
 export default ClientList;

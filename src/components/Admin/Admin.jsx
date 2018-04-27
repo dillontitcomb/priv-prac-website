@@ -9,7 +9,7 @@ function Admin(props){
       <div>
         <h1>Administrator Home</h1>
         <ClientList clientList={props.clientList}/>
-				<Link to="/new-client">Add New Client</Link>
+        <Link to="/new-client">Add New Client</Link>
       </div>
       <style jsx>{`
 					div.jumbotron {
@@ -22,7 +22,7 @@ function Admin(props){
 }
 
 Admin.propTypes = {
-	clientList: PropTypes.object
-}
+  clientList: PropTypes.object
+};
 
 export default Admin;

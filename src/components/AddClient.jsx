@@ -19,35 +19,35 @@ function AddClient(props){
 
   return (
     <div className="addClientForm">
-			<h3>Provide Client Information</h3>
+      <h3>Provide Client Information</h3>
       <form onSubmit={handleNewClientFormSubmission}>
-				<p>Name</p>
+        <p>Name</p>
         <input
           type='text'
           id='name'
           placeholder='First and last name'
           ref={(input) => {_name = input;}}/><br/>
-				<p>Phone</p>
+        <p>Phone</p>
         <input
           type='text'
           id='phone'
           placeholder='Phone number'
           ref={(input) => {_phone = input;}}/><br/>
-				<p>Email</p>
+        <p>Email</p>
         <input
           id='email'
           placeholder='Email address.'
           ref={(input) => {_email = input;}}/><br/>
-				<p>Bio</p>
+        <p>Bio</p>
         <textarea
           id='bio'
           placeholder='A little bit about yourself.'
           ref={(textarea) => {_bio = textarea;}}/><br/>
         <button type='submit'>Add client</button>
       </form>
-			<br/>
-			<Link to="/admin">Return to Admin Client Views</Link>
-			<style jsx>{`
+      <br/>
+      <Link to="/admin">Return to Admin Client Views</Link>
+      <style jsx>{`
 				div.addClientForm {
 					margin: auto;
 					margin-top: 20px;

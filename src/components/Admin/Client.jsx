@@ -6,13 +6,13 @@ function Client(props){
     <div className="clientInfo">
       <h3>{props.name}</h3>
       <h6>{props.email} - {props.phone}</h6>
-			<p>{props.bio}</p>
+      <p>{props.bio}</p>
     </div>;
 
   return (
     <div>
       {clientInformation}
-			<style jsx>{`
+      <style jsx>{`
 				div.clientInfo {
 					width: 90%;
 					min-width: 150px;
