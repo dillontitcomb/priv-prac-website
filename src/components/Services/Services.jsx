@@ -15,12 +15,12 @@ function Services(){
     <div>
       <div>
         <h1>Our Services:</h1>
-	        {masterServicesList.map((service, index) =>
-	          <Service name={service.name}
-	            cost={service.cost}
-	            key={index}/>
+        {masterServicesList.map((service, index) =>
+          <Service name={service.name}
+            cost={service.cost}
+            key={index}/>
 	        )}
-				<button>Schedule an session</button>
+        <button>Schedule an session</button>
       </div>
       <style jsx>{`
 					div.jumbotron {

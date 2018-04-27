@@ -7,7 +7,7 @@ function Header(){
     <div className="topnav">
       <Link className="link active" to="/">Home</Link>
       <Link className="link" to="/about">About</Link>
-			<Link className="link" to="/counselors">Our Counselors</Link>
+      <Link className="link" to="/counselors">Our Counselors</Link>
       <Link className="link" to="/approach">Approach</Link>
       <Link className="link" to="/services">Services</Link>
       <Link className="link" to="/resources">Resources</Link>

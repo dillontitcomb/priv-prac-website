@@ -15,12 +15,12 @@ function Counselors(){
     <div>
       <div>
         <h1>Our Counselors:</h1>
-	        {masterCounselorsList.map((counselor, index) =>
-	          <Counselor name={counselor.name}
-	            specialty={counselor.specialty}
-	            key={index}/>
+        {masterCounselorsList.map((counselor, index) =>
+          <Counselor name={counselor.name}
+            specialty={counselor.specialty}
+            key={index}/>
 	        )}
-				<button>Schedule an session</button>
+        <button>Schedule an session</button>
       </div>
       <style jsx>{`
 					div.jumbotron {

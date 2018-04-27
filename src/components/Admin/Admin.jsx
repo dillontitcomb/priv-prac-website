@@ -1,12 +1,15 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import ClientList from './ClientList';
+import { Link } from 'react-router-dom';
 
-function Admin(){
+function Admin(props){
   return (
     <div>
       <div>
         <h1>Administrator Home</h1>
-        <button>Manage Clients</button>
-        <button>Manage Appointments</button>
+        <ClientList clientList={props.clientList}/>
+				<Link to="/new-client">Add New Client</Link>
       </div>
       <style jsx>{`
 					div.jumbotron {
@@ -16,6 +19,10 @@ function Admin(){
       </style>
     </div>
   );
+}
+
+Admin.propTypes = {
+	clientList: PropTypes.object
 }
 
 export default Admin;
