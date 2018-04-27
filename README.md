@@ -10,6 +10,9 @@ _This webpage aims to be the online presence of a counseling private practice. T
 
 ## Specifications / Planning
 
+* _Data Planning:_
+https://docs.google.com/spreadsheets/d/1_XsH0q-iwK_orf8zJCM-HysgAUJIqKUHEFCPLYD73ps/edit?usp=sharing
+
 * _Core Needs:_
 	* _Pages: Home, About, Approach, Services, Resources, Counselors (w/ personal pages for each), Contact_
 	* _Functionality: CRUD Clients, CRUD Appointments (clients can only create/request), messaging between client and counselor_
