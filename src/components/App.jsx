@@ -39,12 +39,15 @@ class App extends React.Component {
     <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/about' component={About} />
-          <Route exact path='/admin' render={()=><Admin clientList={this.state.masterClientList} />} />
+          <Route exact path='/admin' render={(props)=><Admin 
+							clientList={this.state.masterClientList}
+							currentRouterPath={props.location.pathname}
+							onAddClient={this.handleAddClient} />} />
           <Route exact path='/approach' component={Approach} />
           <Route exact path='/services' component={Services} />
           <Route exact path='/resources' component={Resources} />
           <Route exact path='/counselors' component={Counselors} />
-          <Route exact path='/new-client' render={()=><AddClient onAddClient={this.handleAddClient}/>} />
+          <Route exact path='/new-client' render={(props)=><AddClient onAddClient={this.handleAddClient} currentRouterPath={props.location.pathname}/>} />
           <Route component={Error404} />
         </Switch>
     <Footer/>

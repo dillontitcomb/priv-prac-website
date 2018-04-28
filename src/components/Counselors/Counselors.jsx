@@ -1,5 +1,6 @@
 import React from 'react';
 import Counselor from './Counselor';
+import { Link } from 'react-router-dom';
 
 const masterCounselorsList = [
   {name: 'Mackenzie Moll',
@@ -20,7 +21,7 @@ function Counselors(){
             specialty={counselor.specialty}
             key={index}/>
 	        )}
-        <button>Schedule an session</button>
+        <Link to="/new-client">Schedule an session</Link>
       </div>
       <style jsx>{`
 					div.jumbotron {

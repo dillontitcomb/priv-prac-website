@@ -1,5 +1,6 @@
 import React from 'react';
 import Service from './Service';
+import { Link } from 'react-router-dom';
 
 const masterServicesList = [
   {name: 'Individual Therapy',
@@ -20,7 +21,7 @@ function Services(){
             cost={service.cost}
             key={index}/>
 	        )}
-        <button>Schedule an session</button>
+        <Link to="/new-client">Schedule an session</Link>
       </div>
       <style jsx>{`
 					div.jumbotron {

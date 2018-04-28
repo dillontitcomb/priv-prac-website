@@ -1,5 +1,6 @@
 import React from 'react';
 import office from '../../assets/images/office.jpg';
+import { Link } from 'react-router-dom';
 
 function Home(){
   const callToAction = 'Welcome to Mackenzie & Friends Counseling Group';
@@ -14,7 +15,7 @@ function Home(){
       <div className="jumbotron">
         <h1>{welcomeText}</h1>
         <hr></hr>
-        <button>Schedule an session</button>
+        <Link to="/new-client">Schedule an session</Link>
       </div>
       <style jsx>{`
 					div.topimage {

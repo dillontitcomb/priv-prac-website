@@ -7,6 +7,12 @@ function AddClient(props){
   let _phone = null;
   let _email = null;
   let _bio = null;
+	let clientFormHeader = "Provide Client Information"
+	let nameLabel = "Name";
+	let phoneLabel = "Phone";
+	let emailLabel = "Email";
+	let bioLabel = "Bio";
+	let buttonLabel = "Add Client";
 
   function handleNewClientFormSubmission(event) {
     event.preventDefault();
@@ -17,37 +23,46 @@ function AddClient(props){
     _bio.value = '';
   }
 
+	if (props.currentRouterPath !== "/admin") {
+		clientFormHeader = "Welcome! Please provide your basic contact information. We'll contact you as soon as we can to schedule an appointment."
+		nameLabel = "Please input your name";
+		phoneLabel = "Please provide your phone number";
+		emailLabel = "Input your email";
+		bioLabel = "Tell us a bit about yourself";
+		buttonLabel = "Submit";
+	}
+
   return (
     <div className="addClientForm">
-      <h3>Provide Client Information</h3>
+			<h3>{clientFormHeader}</h3>
       <form onSubmit={handleNewClientFormSubmission}>
-        <p>Name</p>
+				<p>{nameLabel}</p>
         <input
           type='text'
           id='name'
           placeholder='First and last name'
           ref={(input) => {_name = input;}}/><br/>
-        <p>Phone</p>
+				<p>{phoneLabel}</p>
         <input
           type='text'
           id='phone'
           placeholder='Phone number'
           ref={(input) => {_phone = input;}}/><br/>
-        <p>Email</p>
+				<p>{emailLabel}</p>
         <input
           id='email'
           placeholder='Email address.'
           ref={(input) => {_email = input;}}/><br/>
-        <p>Bio</p>
+				<p>{bioLabel}</p>
         <textarea
           id='bio'
-          placeholder='A little bit about yourself.'
+          placeholder='A short bio'
           ref={(textarea) => {_bio = textarea;}}/><br/>
-        <button type='submit'>Add client</button>
+				<button type='submit'>{buttonLabel}</button>
       </form>
-      <br/>
-      <Link to="/admin">Return to Admin Client Views</Link>
-      <style jsx>{`
+			<br/>
+			{(props.currentRouterPath === "/admin") ? <Link to="/admin">Return to Admin Client Views</Link> : <Link to="/">Return Home</Link>}
+			<style jsx>{`
 				div.addClientForm {
 					margin: auto;
 					margin-top: 20px;
@@ -84,7 +99,8 @@ function AddClient(props){
 }
 
 AddClient.propTypes = {
-  onAddClient: PropTypes.func
+  onAddClient: PropTypes.func,
+	currentRouterPath: PropTypes.string.isRequired
 };
 
 export default AddClient;
