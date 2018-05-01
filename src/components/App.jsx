@@ -39,7 +39,7 @@ class App extends React.Component {
     <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/about' component={About} />
-          <Route exact path='/admin' render={(props)=><Admin 
+          <Route exact path='/admin' render={(props)=><Admin
 							clientList={this.state.masterClientList}
 							currentRouterPath={props.location.pathname}
 							onAddClient={this.handleAddClient} />} />
@@ -54,8 +54,10 @@ class App extends React.Component {
     <style global jsx>{`
 					body {
 						margin: 0;
-						background-color: #bccad6;
-						font-family: Helvetica;
+						background-color: #F7F9FB;
+						font-family: Verdana;
+						font-weight: lighter;
+
 					}
 
 					div.container {

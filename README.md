@@ -18,6 +18,13 @@ https://docs.google.com/spreadsheets/d/1_XsH0q-iwK_orf8zJCM-HysgAUJIqKUHEFCPLYD7
 	* _Functionality: CRUD Clients, CRUD Appointments (clients can only create/request), messaging between client and counselor_
 	* _Design Guidelines: Outdoorsy, personal, warm, holistic but professional, inclusive, depth-oriented_
 
+* _Style Guide (#3 from https://digitalsynopsis.com/design/website-color-schemes-palettes-combinations/):_
+ * _#687864_
+ * _#31708E_
+ * _#5085A5_
+ * _#8FC1E3_
+ * _#F7F9FB_
+
 ## Assignment Questions
 
 * _Difficulties during development process:_
