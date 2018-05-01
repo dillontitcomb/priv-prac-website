@@ -24,6 +24,7 @@ https://docs.google.com/spreadsheets/d/1_XsH0q-iwK_orf8zJCM-HysgAUJIqKUHEFCPLYD7
  * _#5085A5_
  * _#8FC1E3_
  * _#F7F9FB // Slightly lighter, more pop: #FCFDFD_
+ * _#F2B9E6 (accent Pink)_
 
 ## Assignment Questions
 

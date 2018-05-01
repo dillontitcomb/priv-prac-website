@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import treeLogo from '../assets/images/treelogo-pink.png';
+import treeLogo from '../assets/images/treelogo-purp.png';
 
 
 function Header(){
@@ -25,7 +25,7 @@ function Header(){
 				 	.topnav .link {
 						text-align: center;
 						float: left;
-						color: #31708E;
+						color: #5085A5;
 						text-decoration: none;
 						padding: 5px;
 						margin-right: 15px;
