@@ -54,10 +54,13 @@ class App extends React.Component {
     <style global jsx>{`
 					body {
 						margin: 0;
-						background-color: #F7F9FB;
+						background-color: #FCFDFD;
 						font-family: Verdana;
 						font-weight: lighter;
+					}
 
+					h1 {
+						color: #5085A5;
 					}
 
 					div.container {

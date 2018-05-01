@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import treeLogo from '../assets/images/treelogo.png';
+import treeLogo from '../assets/images/treelogo-pink.png';
 
 
 function Header(){
@@ -18,7 +18,7 @@ function Header(){
 					.topnav {
 						display: flex;
 						align-items: center;
-						background-color: #F7F9FB;
+						background-color: #FCFDFD;
 						overflow: hidden;
 					}
 
@@ -28,12 +28,12 @@ function Header(){
 						color: #31708E;
 						text-decoration: none;
 						padding: 5px;
+						margin-right: 15px;
 						font-size: 18px;
 					}
 
 					.topnav .link:hover {
-						background-color: #8FC1E3;
-    				color: black;
+    				color: #8FC1E3;
 					}
 
 					.topnav .treeLogo {
